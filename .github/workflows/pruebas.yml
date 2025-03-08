@@ -8,11 +8,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Checkout de repositorio
-      uses: actions/checkout@v2
+      uses: actions/checkout@v4
     - name: Configuración de entorno de python
-      uses: actions/setup-python@v2
+      uses: actions/setup-python@v4
       with:
-          python-version: '3.7.1'
+          python-version: '3.7.9'
     - name: Correr pruebas
       id: correr-pruebas
       run: python -m unittest -v tests/test_persona.py
